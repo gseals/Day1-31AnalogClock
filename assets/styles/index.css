@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#EE2277), to(#99005A));
+  background-image: linear-gradient(to bottom right, #EE2277, #99005A);
+}
+
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+}
+
+.clock:after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.clock-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.clock-inner .clock-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #FFF;
+}
+
+.clock-inner .hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: calc(50% - 20px);
+  height: 6px;
+  background-color: #FFF;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  border-radius: 999px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.clock-inner .hand.second {
+  opacity: 0.5;
+  height: 3px;
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.clock-inner .hand.minute {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.clock-inner .hand.hour {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  width: calc(50% - 80px);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+/*# sourceMappingURL=index.css.map */
