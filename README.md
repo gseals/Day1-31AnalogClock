@@ -4,7 +4,7 @@
 
 ## Description
 
-* This is an Analog Clock built using HTML, CSS, JavaScript, and SCSS that adheres to the time where you are.
+* This is an Analog Clock built using HTML, CSS, JavaScript, and SCSS that reflects the time where you are.
 
 ## Demo Link
 
@@ -20,7 +20,7 @@
 ## Screenshots
 
 ### Landing Page Photo Taken at 2:05pm
-![Landing Page]()
+![Landing Page Photo Taken at 2:05pm](https://raw.githubusercontent.com/gseals/Day1-31AnalogClock/master/screenshots/LandingPage205.png)
 
 ## How to Run
 
